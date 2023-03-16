@@ -1,14 +1,14 @@
 import path from 'path';
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./db/db.js";
+import connectDB from "./backend/db/db.js";
 // import cloudinary from "./utils/cloudinary.js";
-import categoryAndSizeRoutes from './routes/categoryAndSizeRoutes.js'
-import productRoutes from "./routes/productRoutes.js";
-import userRoutes from "./routes/userRoutes.js";
-import orderRoutes from './routes/orderRoutes.js';
-import orderAdminRoutes from './routes/orderAdminRoutes.js';
-import userAdminRoutes from './routes/userAdminRoutes.js'
+import categoryAndSizeRoutes from './backend/routes/categoryAndSizeRoutes.js'
+import productRoutes from "./backend/routes/productRoutes.js";
+import userRoutes from "./backend/routes/userRoutes.js";
+import orderRoutes from './backend/routes/orderRoutes.js';
+import orderAdminRoutes from './backend/routes/orderAdminRoutes.js';
+import userAdminRoutes from './backend/routes/userAdminRoutes.js'
 // import testRoutes from './routes/testRoutes.js';
 // import AppError from './utils/appError.js';
 dotenv.config();
