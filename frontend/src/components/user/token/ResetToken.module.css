@@ -1,0 +1,35 @@
+.wrapper{
+    padding-top: 5rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__box{
+  width: 30rem;
+  /* background-color: red; */
+  padding: 2rem;
+  border: 2px solid black;
+}
+.p{
+    text-align: left;
+    padding-left: 1rem;
+}
+.form__div{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    border: none;
+    background-color: var(--bg-1);
+    border-bottom: 1px solid black;
+
+}
+
+.input:focus{
+    outline: none;
+}

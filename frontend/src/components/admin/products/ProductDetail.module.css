@@ -1,0 +1,146 @@
+.wrapper{
+    /* background-color: red; */
+    width: 100%;
+    min-height: 100vh;
+   
+}
+.pr__wrapper{
+    padding-top: 5rem;
+}
+
+.type__box{
+    margin: 1rem;
+    padding-left: 3rem;
+    display: flex;
+    /* background-color: red; */
+}
+
+.pr_type{
+    font-size: 2rem;
+    background-color: var(--bg-3);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.cover__image{
+    width: 20rem;
+    height: 20rem;
+    background-color: tan;
+}
+.cover__image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.color__map{
+    width: 5rem;
+    height: 5rem;
+}
+.colors__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+}
+.btn__color{
+    background-color: transparent;
+    padding: 0;
+      margin: 1rem;
+     border: none; 
+     cursor: pointer;
+}
+
+.color__box{
+    width: 15rem;
+    display: flex;
+    border: 1px solid white;
+    /* margin: 1rem; */
+    padding: 3px;
+    /* justify-content: space-between; */
+}
+.color__box >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.color__map{
+    margin-left: auto;
+}
+.sku__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+.sku__box{
+    border: 1px solid var(--bg-3);
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.btn_update{
+    font-size: 2rem;
+    padding: 3px 10px;
+    margin-left: 1rem;
+}
+
+.form__update{
+    font-size: 4rem;
+    color: white;
+}
+
+.image__cl__wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image__cl__box{
+    width: 10rem;
+    height: 10rem;
+    /* background-color: yellow; */
+}
+.image__cl__box > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 37.5em) {
+    /* //600 */
+    .type__box{
+        margin-top: 0rem;
+        padding-left: 0rem;
+        
+    }
+    .sku__wrapper{
+     
+        padding-left: 0rem;
+    }
+    .sku__box{
+       
+        margin: 1rem;
+    }
+    .btn__color{
+      
+          margin: 2px;
+      
+    }
+  }
+@media only screen and (max-width: 30em) {
+    /* //600 */
+    .type__box{
+        margin: 2rem 0rem;
+        margin-right: 1rem;
+        padding: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: var(--bg-4);
+        
+    }
+    .type__box>p,button{
+        margin-top: 1rem;
+    }
+    
+  }

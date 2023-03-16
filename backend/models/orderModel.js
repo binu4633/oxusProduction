@@ -1,0 +1,123 @@
+import mongoose from "mongoose";
+
+const orderSchema = mongoose.Schema({
+  customerId:{
+    type:String
+  },
+  paymentIntentId:{
+    type:String
+  },
+   products:[
+    {
+       id:{
+        type:mongoose.Schema.ObjectId,
+        ref:'Product'
+       },
+       category:{
+        type:String,
+        required:true
+       }, 
+       name:{
+        type:String,
+        required:true
+       },
+       color:{
+        type:String,
+       },
+       size:{
+        type:String,
+       },
+       sku:{
+        type:String,
+        required:true
+       },
+       image:{
+        type:String,
+       },
+       quantity:{
+        type:Number
+       },
+       price:{
+        type:Number
+       },
+       discount:{
+        type:Number
+       },
+       discountedPrice:{
+        type:Number
+       },
+       totalPrice:{
+        type:Number
+       }
+    }
+   ],
+   shippingAddress:{
+    name:{
+        type:String
+    },
+    email:{
+      type:String
+    },
+    phoneNumber:{
+      type:String
+    },
+    country:{
+      type:String
+    },
+    address:{
+      type:String
+    },
+    place:{
+      type:String
+    },
+    city:{
+      type:String
+    },
+    state:{
+      type:String
+    },
+    pinCode:{
+      type:String
+    },
+   },
+   subTotal:{
+    type:Number,
+    required:true
+   },
+   shipping_cost:{
+    type:Number,
+   },
+   discount:{
+    type:Number
+   },
+   total:{
+    type:Number,
+    required:true
+   },
+   guest:{
+      type:Boolean,
+      default:false
+   },
+   member:{
+      type:mongoose.Schema.ObjectId,
+      ref:'User'
+   },
+   delivery_status:{
+    type:String,
+    default:'pending'
+   },
+   delivery_date:{
+    type:Date
+   },
+   payment_status:{
+    type:String,
+    required:true
+   }
+},{
+  timestamps: true,
+});
+
+
+
+const Order = mongoose.model('Order', orderSchema);
+export default Order;

@@ -1,0 +1,121 @@
+.cart_screen{
+    font-size: 3rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color:var(--bg-1);
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.sub_heading{
+    font-size: 4rem;
+    padding: 2rem;
+    display: flex;
+    color: white;
+}
+.sub_heading_product{
+    width: 55%;
+}
+.sub_heading_total{
+    margin-left: auto;
+}
+
+
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    font-size: 5rem;
+    margin-left: auto;
+    padding-right: 10%;
+  }
+
+
+  .cart_checkout{
+    display: flex;
+  }
+  /* .cart_checkout>div{
+    width: 50%;
+  } */
+
+  .note{
+    font-size: 5rem;
+    padding-left: 5rem;
+  }
+.form{
+    /* background-color: green; */
+    font-size: 7rem;
+}
+.btn_textarea{
+    border: none;
+    width: 5rem;
+    height: 3rem;
+    background-color: orange;
+}
+
+.checkout{
+    text-align: end;
+    padding-right: 4rem;
+    margin-left: auto;
+}
+.sub_total{
+    font-size: 3rem;
+    margin: 2rem;
+    color: white;
+}
+
+.subtotal__span{
+    background-color: rgba(95, 60, 26, 1);
+    display: inline-block;
+    font-size: 3rem;
+    padding: 3px 6px;
+}
+.sub_total_comment{
+    font-size: 2rem;
+    margin: 2rem;
+    color: white;
+}
+.btn_checkout_member{
+    font-size: 2rem;
+    width: 25rem;
+    padding: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.btn_checkout_guest{
+    font-size: 2rem;
+    padding: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 25rem;
+    margin: 1rem;
+}
+
+.error_box{
+
+width: 100%;
+height: 40vh;
+background-color: tomato;
+
+font-size: 6rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+.btn_back{
+    width: 10rem;
+   border-radius: 20px;
+
+}

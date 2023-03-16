@@ -1,0 +1,7 @@
+.wrapper{
+    font-size: 7rem;
+}
+
+.clr_box{
+    border: 2px solid var(--bg-4);
+}

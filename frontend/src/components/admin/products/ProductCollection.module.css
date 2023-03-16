@@ -1,0 +1,32 @@
+.wrapper{
+    padding-top: 5rem;
+    overflow-x: auto;
+}
+
+
+
+
+.table{
+    font-size: 4rem;
+    width: 100%;
+    border:1px solid black;
+    color: white;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+.thead{
+    font-size: 4rem;
+    background-color: var(--bg-3);
+}
+.thead > tr >th{
+    border:1px solid rgb(212, 0, 255)
+}
+.tbody{
+    font-size: 4rem;
+}
+
+.tbody >tr >td{
+    border:1px solid rgb(11, 75, 5)
+}
+
+

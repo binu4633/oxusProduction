@@ -1,0 +1,246 @@
+.collections{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    margin-top: 5rem;
+    padding-top: 3rem;
+
+}
+.filter__bar{
+width: 90%;
+height: 4rem;
+background-color: var(--bg-1);
+border-bottom: 2px solid white;
+margin-left: 5%;
+ position: relative;
+
+}
+.display__filter{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.filter__bar >div{
+    height: 100%;
+    width: 20%;
+   
+}
+.display__filter__large{
+    display: block;
+}
+.product__sort{
+    font-size: 3.5rem;
+    position: absolute;
+    right: 5%;
+   
+}
+.product__sort >select{
+    border: none;
+    outline: none;
+    margin-top: -4rem;
+    background-color: var(--bg-1);
+}
+
+.display__filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display__three,.display__five{
+ margin-right: 2px;
+ border: none;
+ padding: 3px 5px;
+ background-color: var(--bg-3);
+}
+.display__three >span{
+    width: 10px;
+    height: 2rem;
+    background-color: var(--bg-1);
+    display: inline-block;
+    margin:1px;
+    border-radius: 10rem;
+}
+
+.display__five >span{
+    width: 5px;
+    height: 2rem;
+    background-color: var(--bg-1);
+    display: inline-block;
+    margin:1px;
+    border-radius: 10rem;
+}
+.display__one{
+    border: none;
+     padding: 3px 5px;
+    margin-right: .5rem;
+    background-color: var(--bg-3);
+   
+
+}
+.display__one >span{
+    height: 1.5rem;
+    width: 5px;
+    display: inline-block;
+    margin:1px;
+    background-color: black;
+    border-radius: 1rem;
+    background-color: var(--bg-1);
+   
+}
+.display__two{
+    border: none;
+    padding: 3px 5px;
+    background-color: var(--bg-3);
+}
+.display__two >span{
+    height: 1.5rem;
+    width: 3px;
+    display: inline-block;
+    margin:1px;
+    background-color: var(--bg-1);
+}
+
+.card__collection_3{
+ 
+    width: 100%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+}
+.card__collection_5{
+     width: 100%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    
+}
+.card__collection_2{
+     width: 100%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+    
+    
+}
+.card__collection_1{
+     width: 100%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    
+}
+.card__collection_3>div{
+    height: 40rem;
+    
+
+}
+.card__collection_5>div{
+    height: 40rem;
+
+
+}
+
+
+
+
+
+
+.pagination{
+    width: 100%;
+    height: 4rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__box{
+    /* width: 6rem; */
+    height: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+}
+.arrow_box{
+    width: 5rem;
+ 
+
+    height: 100%;
+    margin: 0 1rem;
+    /* background-color: darkgoldenrod; */
+}
+.arrow_box > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.pagination_pages{
+    height: 100%;
+    max-width: 20rem;
+    overflow: hidden;
+}
+.page_container{
+    display: flex;
+   
+}
+.page{
+    font-size: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: scale(0.9);
+    /* margin: 0 2px 0 2px; */
+    
+    
+}
+
+
+@media only screen and (max-width: 56.25em) {
+    /* // 900px */
+ 
+    .product__sort{
+     font-size: 3rem;
+    }
+   
+   
+  }
+  
+@media only screen and (max-width: 37.5em) {
+    .display__filter__large{
+      display: none;
+    
+    }
+    .product__sort >select{
+        /* background-color: yellow; */
+        width: 100%;
+        right: 0;
+    }
+    .product__sort {
+        left: 5%;
+    }
+ }
+@media only screen and (min-width: 37.5em) {
+    .display__filter__small{
+      display: none;
+    
+    }
+ }
+ 
+
+
+@media only screen and (max-width: 37.5em) {
+    .arrow_box{
+      width:3rem;
+    
+    }
+ }

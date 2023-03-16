@@ -1,0 +1,72 @@
+.wrapper{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 2px solid var(--bg-4);
+}
+.block{
+    width: 80%;
+    height: 10rem;
+    /* background-color: tomato; */
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.color_box{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+   
+}
+.color_img_wrapper{
+    width:5rem;
+    height: 5rem;
+    /* background-color: yellow; */
+    /* border: 2px solid black; */
+    border-radius: 50%;
+}
+.color_img_wrapper >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.color_name{
+    /* background-color: rgb(174, 0, 255); */
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.delete_box{
+    /* background-color: rgb(120, 219, 28); */
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.btn_delete{
+    width: 13rem;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(109, 108, 108);
+}
+
+@media only screen and (max-width: 37.5em) {
+    /* //600 */
+    .color_name{
+        /* background-color: rgb(174, 0, 255); */
+        font-size: 4rem;
+   
+    
+    }
+  }

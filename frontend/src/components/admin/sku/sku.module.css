@@ -1,0 +1,17 @@
+.btn_group{
+    font-size: 3rem;
+}
+.btn_group > button {
+    margin: 1rem;
+}
+.btn_fetch{
+    font-size: 3rem;
+}
+
+.wrapper{
+    font-size: 7rem;
+}
+
+.productDisplay{
+    border: 2px solid var(--bg-3);
+}

@@ -1,0 +1,78 @@
+.collections{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    margin-top: 5rem;
+    padding-top: 3rem;
+
+}
+.filter__bar{
+width: 90%;
+height: 4rem;
+background-color: var(--bg-2);
+margin-left: 5%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.filter__bar >div{
+    height: 100%;
+    width: 20%;
+    /* background-color: red; */
+}
+.product__sort{
+    font-size: 3.5rem;
+}
+.product__sort >select{
+    border: none;
+    outline: none;
+    margin-top: -4rem;
+}
+.size__filter{
+    font-size: 3.5rem;
+}
+.size__filter >select{
+    border: none;
+    outline: none;
+    margin-top: -4rem;
+}
+.color__filter{
+    font-size: 3.5rem;
+}
+.color__filter >select{
+    border: none;
+    outline: none;
+    margin-top: -4rem;
+}
+.display__filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display__three{
+ margin-right: 2px;
+}
+.display__three >span{
+    width: 10px;
+    height: 2rem;
+    background-color: black;
+    display: inline-block;
+    margin:1px;
+}
+.display__five >span{
+    width: 5px;
+    height: 2rem;
+    background-color: black;
+    display: inline-block;
+    margin:1px;
+}
+
+.card__collection{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5rem;
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr ); */
+     row-gap: 5rem;
+}

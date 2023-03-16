@@ -1,0 +1,9 @@
+.pin_box{
+    font-size: 4rem;
+}
+
+.pin_box > button{
+    background-color: black;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,91 @@
+.base{
+    width: 100%; 
+    padding-top: 5rem;
+}
+
+.form_div{
+    font-size: 4rem;
+}
+.btn{
+    font-size: 2rem;
+    min-width: 9rem;
+    border-radius: 30px;
+    min-width: 20%;
+}
+.menu__btn_block{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    
+    /* background-color: green; */
+}
+.btn__menu{
+    /* font-size: 10rem; */
+    min-width: 40%;
+    background-color:var(--bg-4);
+    border: none;
+    /* border-radius: 40px; */
+    /* height: 3rem; */
+    color: white;
+    border: 2px solid var(--bg-3);
+    padding: 1rem;
+   
+}
+
+
+
+.block {
+    border:2px solid black;
+    width: 100%;
+}
+
+.size__span{
+    display: inline-block;
+    min-width: 3rem;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+.input__text{
+    border: none;
+    background-color: var(--bg-1);
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+.input__text:focus{
+    border: none;
+    background-color: var(--bg-1);
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.delete__cat > span{
+  display: inline-block;
+  width: 13rem;
+  /* background-color: var(--bg-3); */
+  margin-left: 1rem;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.delete__cat > span>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 37.5em){
+    .btn__menu{
+      min-width: 70%;
+    }
+    .block{
+        width: 95%;
+    }
+  }
+  

@@ -1,0 +1,40 @@
+.wrapper{
+    min-width: 100%;
+    margin: 3rem 0;
+   
+   
+}
+.box{
+    width:50%;
+    background-color: var(--bg-4);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 2rem;
+}
+.btn_edit{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 9rem;
+    background-color: black;
+    color: white;
+    margin: 2rem 0;
+    border: none;
+}
+
+
+  @media only screen and (max-width: 56.25em) {
+
+    .box{
+        width:70%;
+     }
+    
+  }
+
+  @media only screen and (max-width: 37.5em) {
+
+    .box{
+        width:90%;
+     }
+  }
+  

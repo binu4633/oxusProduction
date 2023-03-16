@@ -1,0 +1,228 @@
+
+
+
+.card__1{
+    /* width: 300px;
+    height: 400px; */
+    width: 75%;
+    height:40rem;
+    /* height: 100%; */
+    margin: auto;
+    outline: 2px solid white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.card__2{
+   
+    width: 75%;
+    height:40rem;
+    margin: auto;
+    outline: 2px solid white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.card__3{
+    /* width: 300px;
+    height: 400px; */
+    width: 75%;
+    height: 40rem;
+    /* height: 100%; */
+    margin: auto;
+    outline: 2px solid white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.card__5{
+    /* width: 300px;
+    height: 400px; */
+    width: 90%;
+    height:30rem;
+    /* height: 100%; */
+    margin: auto;
+    outline: 2px solid white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.card__img{
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 70px;  
+    /* border: 2px solid green; */
+
+}
+.card__img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 70px;
+    
+}
+
+
+.card__text__1{
+    width: 100%;
+    height: 25%;
+    margin-top: -5%;
+    /* background-color:rgba(235, 121, 10, 1) ; */
+    background-color:rgba(209, 96, 10, 1) ;
+    /* border: 2px solid red; */
+    z-index: 5;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+
+  .card__text__2{
+    width: 100%;
+    height: 25%;
+    margin-top: -5%;
+    /* background-color:rgba(235, 121, 10, 1) ; */
+    background-color:rgba(209, 96, 10, 1) ;
+    /* border: 2px solid red; */
+    z-index: 5;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  .card__text__3{
+    width: 100%;
+    height: 25%;
+    margin-top: -5%;
+    /* background-color:rgba(235, 121, 10, 1) ; */
+    background-color:rgba(209, 96, 10, 1) ;
+    /* border: 2px solid red; */
+    z-index: 5;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  .card__text__5{
+    width: 100%;
+    height: 25%;
+    margin-top: -5%;
+    /* background-color:rgba(235, 121, 10, 1) ; */
+    background-color:rgba(209, 96, 10, 1) ;
+    /* border: 2px solid red; */
+    z-index: 5;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+.category__3{
+    font-size: 2rem;
+}
+.name__3{
+    font-size: 2.5rem;
+}
+.price__3{
+    font-size: 2.5rem;
+}
+.category__5{
+    font-size: 1.8rem;
+}
+.name__5{
+    font-size: 2.1rem;
+}
+.price__5{
+    font-size: 2.1rem;
+}
+.category__1{
+    font-size: 3rem;
+}
+.name__1{
+    font-size: 3.5rem;
+}
+.price__1{
+    font-size: 3.5rem;
+}
+.category__2{
+    font-size: 1.5rem;
+}
+.name__2{
+    font-size: 2rem;
+}
+.price__2{
+    font-size: 3rem;
+}
+
+.discount_price{
+    text-decoration: line-through;
+}
+
+
+
+/* @media only screen and (max-width: 37.5em) {
+    .arrow_box{
+      width:3rem;
+    
+    }
+ } */
+@media only screen and (max-width: 22em) {
+    .name__1{
+        font-size: 2rem;
+    }
+    .category__1{
+        font-size: 2rem;
+    }
+    .card__text__2{
+        height: 40%;
+    }
+    .card__2{
+        height: 30rem;
+    }
+ }
+
+/* .card{
+   
+    width:20vw;
+    height: 40rem;
+  
+    justify-self: center;
+
+}
+
+.image__box{
+    width: 100%;
+    height: 80%;
+}
+.image__box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content__box{
+    font-size: 1rem;
+    color: var(--color-1);
+}
+
+  */

@@ -1,0 +1,18 @@
+.wrapper{
+    width: 100%;
+    height: calc(100vh - 5rem);
+    position: fixed;
+    left: 0;
+    top: 5rem;
+    z-index: 20;
+    background-color: var(--bg-1);
+    transition: all .3s ease-in;
+}
+
+.btn__link{
+    font-size: 3rem;
+    margin-top: 5rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+}

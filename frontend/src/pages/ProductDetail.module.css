@@ -1,0 +1,21 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+.wrapper>div{
+    width: 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+    /* //600 */
+    .wrapper{
+      flex-direction: column;
+    }
+    
+    .wrapper>div{
+        width: 100%;
+    }
+  }

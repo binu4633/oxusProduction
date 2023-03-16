@@ -1,0 +1,13 @@
+.wrapper{
+    font-size: 7rem;
+}
+
+.productDisplay{
+    border: 2px solid var(--bg-3);
+}
+.btn_fetch_category{
+    font-size: 3rem;
+}
+/* .btn{
+  
+} */

@@ -1,0 +1,111 @@
+.wrapper{
+    /* font-size: 4rem; */
+    width: 100%;
+    min-width: 50vw;
+ 
+    padding: 0 2rem;
+}
+/* .content__box{
+  
+} */
+.content__text{
+    background-color:rgba(209, 96, 10, 1);
+    border-radius: 10px;
+    color: white;
+    min-height: 10rem;
+}
+.category{
+    font-size: 4rem;
+}
+.name{
+    font-size: 3rem;
+}
+.price{
+    font-size: 4rem;
+}
+.price>span{
+    display: inline-block;
+}
+.discount__banner{
+    font-size: 4rem;
+    background-color: coral;
+    padding: 0 2rem;
+    border-radius: 3rem;
+    margin-left: 2rem;
+}
+
+.description{
+    width: 95%;
+    min-height: 5rem;
+    font-size: 3rem;
+    background-color: tomato;
+    margin: 2rem auto 2rem auto;
+    border-radius: 3rem;
+
+}
+.clr_select{
+    font-size: 2rem;
+    color: white;
+}
+.color__block{
+    display: flex;
+    justify-content: center;
+}
+
+.color__picker{
+    width: 4rem;
+    height: 4rem;
+  
+    border-radius: 50%;
+    margin: 4px;
+    border: 2px solid black;
+    transition:'all 0.5s'
+}
+
+.btn__size{
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin: 5px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(95, 60, 26, 1);
+    border-radius:15%;
+}
+.btn__chart{
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.selected{
+    font-size: 4rem;
+    background-color:rgba(209, 96, 10, 1) ;
+    margin-top: 1rem;
+    color: white;
+}
+
+.add_to_cart{
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    min-width: 20rem;
+    background-color: rgba(95, 60, 26, 1);
+    color: white;
+    border: none;
+}
+
+.discount_price{
+    text-decoration: line-through;
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    /* //600 */
+    .wrapper{
+        padding: 2rem .5rem 3rem .5rem;
+    }
+  }

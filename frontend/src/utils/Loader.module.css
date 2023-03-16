@@ -1,0 +1,124 @@
+.base{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load_wrapper{
+    width: 20rem;
+    height: 10rem;
+    /* background-color: red; */
+    display: flex;
+
+}
+.load_wrapper>div{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--bg-1);
+    position: relative;
+}
+.circleOne{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border : 1px solid white;
+}
+.circleOne_half{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg-1);
+   
+}
+
+.loadOne_wheel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    /* background-color: coral; */
+    animation: loadOneAnim 1s infinite ;
+}
+.loadOne_wheel_half{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg-1);
+}
+@keyframes loadOneAnim {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+/* .loadTwo{
+    margin-left: -2px;
+} */
+
+.circleTwo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border : 1px solid white;
+}
+.circleTwo_half{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg-1);
+   
+}
+
+.loadTwo_wheel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    /* background-color: coral; */
+    animation: loadOneAnim2 1s infinite 1s ;
+}
+.loadTwo_wheel_half{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg-1);
+}
+
+@keyframes loadOneAnim2 {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}

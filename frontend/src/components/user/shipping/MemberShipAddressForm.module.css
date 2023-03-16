@@ -1,0 +1,87 @@
+.wrapper{
+    font-size: 5rem;
+    overflow-y: scroll;
+}
+
+.backdrop{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 5;
+}
+
+.shipping_address_main{
+    width: 70%;
+    height: 100vh;
+    background-color: var(--bg-1);
+    position: fixed;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    z-index: 10;
+    overflow-y: scroll;
+    padding-bottom: 10rem;
+   
+
+}
+
+.shipping_address_main>h3{
+    font-size: 3rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.shipping_addres_form{
+    width: 100%;
+    /* background-color: lavender; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: scroll; */
+}
+.shipping_addres_form>div{
+    /* font-size: 2.5rem; */
+    /* background-color: darkblue; */
+    width: 70%;
+}
+.shipping_addres_form>div>input{
+    width: 100%;
+    background-color: var(--bg-1);
+    border-bottom: 1px solid black;
+    color: white;
+}
+.shipping_addres_form>div>input:focus{
+    outline: none;
+}
+.btn_block{
+    display: flex;
+    justify-content: space-around;
+}
+.btn_shipping{
+    font-size: 2rem;
+    width:fit-content;
+    height: 4rem;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1rem;
+}
+.shipping_pin_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+    /* //600 */
+    .shipping_address_main{
+        width: 90%;
+        }
+  }
+  

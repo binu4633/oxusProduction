@@ -1,0 +1,32 @@
+.wrapper{
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    width: 20vw;
+    min-height: 20vh;
+    background-color:var(--bg-1);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 5rem;
+}
+
+.logout_body{
+    width: 80%;
+    height: 3rem;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout_body > button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
