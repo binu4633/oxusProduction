@@ -23,7 +23,7 @@ import {
     // findSliderImage 
   } from "../controller/categoryAndSizeController.js";
   // import {protect} from '../middleware/authMiddleware.js';
-  import {protect} from '../middleWare/authMiddleWare.js';
+  import {protect} from '../../backend/middleWare/authMiddleWare.js';
 
 router.route("/getcategory").get(showCategory);
 router.route("/category").post(protect, addCategory);
