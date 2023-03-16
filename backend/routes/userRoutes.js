@@ -22,6 +22,9 @@ const router = express.Router();
 router.post("/", registerUser);
 router.post("/login", loginUser);
 router.post("/googleAuth", googleAuth);
+router.route("/forgotPassword").post(forgotPassword);
+router.route("/resetForgetPassword/:token").patch(resetForgetPassword);
+
 router.route("/profile").get(protect, getUserProfile);
 
 router.route("/addAddress").post(protect, addAddress);
@@ -30,7 +33,6 @@ router.route("/deleteAddress").post(protect, deleteAddress);
 router.route("/fetchAddressList").get(protect, fetchAddressList);
 router.route("/resetPassword").patch(protect, resetPassword);
 router.route("/updateProfile").patch(protect, profileUpdate);
-router.route("/forgotPassword").post(forgotPassword);
-router.route("/resetForgetPassword/:token").patch(resetForgetPassword);
+
 
 export default router;
