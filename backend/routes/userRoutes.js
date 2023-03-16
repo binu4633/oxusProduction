@@ -15,7 +15,7 @@ import {
   resetForgetPassword,
   forgotPassword,
 } from "../controller/authController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import {protect} from "../middleware/authMiddleware.js";
 const router = express.Router();
 
 router.post("/", registerUser);
