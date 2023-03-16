@@ -2,7 +2,7 @@ import mongoose from'mongoose';
 // const validator = require('validator');
 
 
-
+let connetUrl
 const connectDB = async()=>{
     try {
     //   const conn = await mongoose.connect(process.env.MONGO_URI,{
@@ -10,7 +10,7 @@ const connectDB = async()=>{
     //     // useNewUrlParser:true,
     //     useCreateIndex:true
     //   }) 
-    let connetUrl
+
 
 if(process.env.NODE_ENV ==='production'){
   connetUrl = process.env.MONGO_URI2;
