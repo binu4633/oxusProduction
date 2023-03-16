@@ -1,7 +1,6 @@
 {
-  "name": "oxus-final",
+  "name": "oxus-production",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -12,7 +11,7 @@
     "dev": "concurrently \" npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "production-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "production-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
@@ -29,5 +28,14 @@
   "devDependencies": {
     "concurrently": "^7.4.0",
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binu4633/oxusProduction.git"
+  },
+  "bugs": {
+    "url": "https://github.com/binu4633/oxusProduction/issues"
+  },
+  "homepage": "https://github.com/binu4633/oxusProduction#readme",
+  "description": ""
 }
