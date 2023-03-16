@@ -12,10 +12,11 @@ router.get('/orderDetail/:id',getOrderDetail)
 router.post('/orderTest',orderTest);
 router.post('/guestOrder',takeGuestOrder);
 
-router.route('/webhook').post( express.raw({type: 'application/json'}), webHooks);
+
 router.route('/createCoupon').post(createCoupon);
 router.route('/createPromo').post(createPromoCode);
 router.post('/memeberOrder',protect,takeMemberOrder);
+router.route('/webhook').post( express.raw({type: 'application/json'}), webHooks);
 
 
 
