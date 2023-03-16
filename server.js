@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import connectDB from "./backend/db/db.js";
 // import cloudinary from "./utils/cloudinary.js";
+// import categoryAndSizeRoutes from './backend/routes/categoryAndSizeRoutes.js'
 import categoryAndSizeRoutes from './backend/routes/categoryAndSizeRoutes.js'
 import productRoutes from "./backend/routes/productRoutes.js";
 import userRoutes from "./backend/routes/userRoutes.js";
