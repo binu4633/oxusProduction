@@ -15,8 +15,11 @@ let domain;
 if(process.env.NODE_ENV == 'development'){
   domain = process.env.DOMAIN
 }else{
-  domain = path.resolve();
+  domain = process.env.DOMAINPRO;
+  // domain = 'http://localhost:5000';
+ 
 }
+
 
 
 const stripe = new Stripe(stripe_private)
@@ -79,7 +82,8 @@ const findShippingCharge = async(req,res)=>{
 
 const takeMemberOrder = async(req,res)=>{
    
-//    console.log('the memeber order is running');
+  //  console.log('the memeber order is running');
+  //  console.log('user', req.user);
 // console.log( 'req body', req.body);
    try {
     const user = req.user[0];
@@ -343,7 +347,8 @@ res.status(200).json({sessionId:session.id})
 const takeGuestOrder = async(req,res)=>{
   try {
    
-    
+    // console.log('the guest route is running');
+    // console.log('domain',domain);
    const products = req.body.cartProduct;
   //  const products = req.body.products;
    const shipppingAddress = req.body.shippingAddress;

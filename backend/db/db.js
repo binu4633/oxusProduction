@@ -2,7 +2,7 @@ import mongoose from'mongoose';
 // const validator = require('validator');
 
 
-let connetUrl = process.env.MONGO_URI2
+// let connetUrl = process.env.MONGO_URI2
 // if(process.env.NODE_ENV ==='production'){
 //   connetUrl = process.env.MONGO_URI2;
  
@@ -22,10 +22,18 @@ const connectDB = async()=>{
 
 
 
-       console.log('conn',connetUrl);
-      const conn = await mongoose.connect(connetUrl) 
+      //  console.log('conn',connetUrl);
+      let conn
+      if(process.env.NODE_ENV ==='production'){
+       
+         conn = await mongoose.connect(process.env.MONGO_URI2) 
+      }else{
+        conn = await mongoose.connect(process.env.MONGO_URI) 
+      }
 
-      // console.log(`Mongodb connected: ${conn.connection.host}`);
+    
+
+      console.log(`Mongodb connected: ${conn.connection.host}`);
     } catch (error) {
         console.error(`mongoose Error ${error.message}`);
         process.exit(1)

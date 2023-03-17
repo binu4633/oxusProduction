@@ -5,7 +5,7 @@ import Images from "../models/imageModel.js";
 const  fetchProductUser = async(req,res)=>{
 
      try {
-        // console.log('req query', req.query);
+        console.log('req query the ', req.query);
         // const product = await Product.find(req.query).select('category name price discount coverImage')
         //  console.log(product);
         const queryObj = {...req.query}
@@ -71,6 +71,8 @@ const  fetchProductUser = async(req,res)=>{
      //127.0.0.1:5000/api/products/all?fields=category,name,MRP&page=2&limit=3
      
          const product = await query.select('category name price discount coverImage');
+
+         console.log('produt', product);
          
         res.send({
             status: "success",
