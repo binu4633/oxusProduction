@@ -22,7 +22,7 @@ if(process.env.NODE_ENV ==='production'){
 
 console.log('conect uri', connetUrl);
    
-      const conn = await mongoose.connect(connetUrl) 
+      const conn = await mongoose.connect(`${connetUrl}`) 
 
       // console.log(`Mongodb connected: ${conn.connection.host}`);
     } catch (error) {
