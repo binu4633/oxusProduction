@@ -2,7 +2,7 @@ import mongoose from'mongoose';
 // const validator = require('validator');
 
 
-// let connetUrl;
+let connetUrl = process.env.MONGO_URI2
 // if(process.env.NODE_ENV ==='production'){
 //   connetUrl = process.env.MONGO_URI2;
  
@@ -22,8 +22,8 @@ const connectDB = async()=>{
 
 
 
-       console.log('conn',String(process.env.MONGO_URI2));
-      const conn = await mongoose.connect(String(process.env.MONGO_URI2)) 
+       console.log('conn',connetUrl);
+      const conn = await mongoose.connect(connetUrl) 
 
       // console.log(`Mongodb connected: ${conn.connection.host}`);
     } catch (error) {
