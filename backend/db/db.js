@@ -19,6 +19,8 @@ if(process.env.NODE_ENV ==='production'){
   connetUrl = process.env.MONGO_URI;
  
 }
+
+console.log('conect uri', connetUrl);
    
       const conn = await mongoose.connect(connetUrl) 
 
