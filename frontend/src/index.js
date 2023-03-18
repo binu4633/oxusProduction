@@ -18,7 +18,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <GoogleOAuthProvider clientId="680514359613-b1kcm8fjd6it4jijhnt36co2m3470lah.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="680514359613-5rk47km896dl4gf0521lhc10vm83grm9.apps.googleusercontent.com">
+    {/* <GoogleOAuthProvider clientId="680514359613-b1kcm8fjd6it4jijhnt36co2m3470lah.apps.googleusercontent.com"> */}
     {/* <GoogleOAuthProvider clientId="680514359613-1d1aub80vee0g8q3pk1a8mo3m4t5epsa.apps.googleusercontent.com"> */}
     <Provider store={store}>
       <Elements stripe={stripePromise}>

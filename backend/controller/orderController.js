@@ -705,8 +705,10 @@ const createOrder = async(customer,data)=>{
 const webHooks =   async (req,res)=>{
   // console.log('hooksssss');
 
-  let signingSecret = 'whsec_a06ba433b8d023ab141934b919e0064c565c16bcb60c32ccf9c0434ab1d2587f';
+  // let signingSecret = 'whsec_a06ba433b8d023ab141934b919e0064c565c16bcb60c32ccf9c0434ab1d2587f';
+  let signingSecret = 'whsec_W6EcZaL1eRDXOFt0d7PZ3aV64adlnrLY';
                       //  whsec_a06ba433b8d023ab141934b919e0064c565c16bcb60c32ccf9c0434ab1d2587f
+                      // whsec_W6EcZaL1eRDXOFt0d7PZ3aV64adlnrLY
   const payLoad = req.body;
 
   // console.log('payload', payLoad);
