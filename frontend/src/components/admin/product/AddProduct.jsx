@@ -214,7 +214,7 @@ function AddProduct() {
       
              {  getCategoryArray && getCategoryArray.map((cat) => (
               
-               <option key={cat._id} value={cat.category}>
+               <option key={uuid()} value={cat.category} >
                  {cat.category}
                </option>
              ))}

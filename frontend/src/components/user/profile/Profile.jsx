@@ -126,6 +126,7 @@ const onEditDisplay = ()=>{
 
   return (
     <div className={classes.wrapper}>
+      {apiStats ==='loading' && <Loader />}
       {loading && <Loader />}
       {!loading && (
         <div className={classes.flex__wrapper}>

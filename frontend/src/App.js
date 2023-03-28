@@ -30,6 +30,7 @@ import GuestShipping from './pages/GuestShipping';
 import MemberShipping from './pages/MemberShipping';
 import Orders from './components/admin/order/Orders';
 import OrderDetail from './components/admin/order/OrderDetail';
+import RetunOrders from './components/admin/order/RetunOrders';
 import Users from './components/admin/user/Users';
 import UserDetail from './components/admin/user/UserDetail';
 import Discount from './components/admin/discount/Discount';
@@ -94,6 +95,7 @@ function App() {
                </Route>
                <Route path='orders' element={<Orders />} />
                <Route path='orderDetail/:id' element={<OrderDetail />} />
+               <Route path='orderReturn' element={<RetunOrders />} />
                <Route path='users' element={<Users />} />
                <Route path='userDetail/:id' element={<UserDetail />} />
                <Route path='discount' element={<Discount />} />

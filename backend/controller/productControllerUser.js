@@ -5,13 +5,13 @@ import Images from "../models/imageModel.js";
 const  fetchProductUser = async(req,res)=>{
 
      try {
-        console.log('req query the ', req.query);
+      
         // const product = await Product.find(req.query).select('category name price discount coverImage')
-        //  console.log(product);
+       
         const queryObj = {...req.query}
         const excludedFields = ['page','sort', 'limit','fields','keyword'];
         excludedFields.forEach(el=>delete queryObj[el]) ;
-       //  console.log(req.query,queryObj);
+       
 
      
        let queryStr = JSON.stringify(queryObj);
@@ -72,7 +72,7 @@ const  fetchProductUser = async(req,res)=>{
      
          const product = await query.select('category name price discount coverImage');
 
-         console.log('produt', product);
+     
          
         res.send({
             status: "success",
@@ -135,7 +135,7 @@ const fetchSliderImages = async(req,res)=>{
             imagesArray.push(images.image5.image)
           }
 
-        //   console.log(imagesArray);
+        
 
         res.send({
             status: "success",

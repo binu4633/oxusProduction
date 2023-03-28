@@ -110,3 +110,9 @@ app.listen(PORT, () => {
     `app listeing port ${PORT} and running in${process.env.NODE_ENV}`
   );
 });
+
+// git add frontend/build -f      
+// git commit -m "domain commit"   
+// git add -A     
+// git push -u origin main        
+

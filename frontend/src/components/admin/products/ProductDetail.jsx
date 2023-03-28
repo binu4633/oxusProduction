@@ -488,6 +488,7 @@ function ProductDetail() {
                     <div className="p_white">color:{pr.color}</div>
                     <div className="p_white">size:{pr.size}</div>
                     <div className="p_white">qty:{pr.qty}</div>
+                    <div className="p_white">sku:{pr.sku}</div>
                   </div>
                 );
               })}

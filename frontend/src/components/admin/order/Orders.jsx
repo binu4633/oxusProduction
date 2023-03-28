@@ -346,7 +346,8 @@ useEffect(()=>{
                   <td>{or.total}</td>
                   <td>{or.delivery_status}</td>
                   <td>{or.payment_status}</td>
-                  <td>{or.createdAt}</td>
+                  {/* <td>{or.createdAt ? new Date(or.createdAt) :''}</td> */}
+                  <td>{(or.createdAt)}</td>
                   <td>
                     <Link to={`/auth/admin/orderDetail/${or._id}`}>view</Link>
                   </td>

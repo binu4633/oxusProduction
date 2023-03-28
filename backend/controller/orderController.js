@@ -216,7 +216,8 @@ if(coupon && couponDetail){
 let session
 if(coupon){
   session = await stripe.checkout.sessions.create({
-    payment_method_types:['card'],
+    //for testing pouprose  thise thing is removed for 
+    // payment_method_types:['card','paynow'],
     //  custom_text:{
     //   shippingAddress:shipppingAddress.address
     //  },
@@ -534,7 +535,8 @@ if(coupon){
    })
 }else{
   session = await stripe.checkout.sessions.create({
-    payment_method_types:['card'],
+    ///////////////////////////////////////
+    // payment_method_types:['card'],
     //  custom_text:{
     //   shippingAddress:shipppingAddress.address
     //  },

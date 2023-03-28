@@ -23,7 +23,7 @@ const addProduct = async (req, res) => {
 
     const isExist = await Product.find({category:req.body.category,name:req.body.name.trim().toLowerCase()});
 
-    // console.log('is exist ', isExist);
+   
 
     if(isExist.length > 0) throw new Error('this name with same category already exist');
 
@@ -80,7 +80,7 @@ const updateProductColor = async (req, res) => {
 
     findProduct.save();
 
-    // console.log();
+   
 
     res.send(" the product updated");
   } catch (e) {
@@ -124,7 +124,7 @@ const findProductForColors = async (req, res) => {
     const product = await Product.find({ ...req.body }).select(
       "name category colors sku sizeType"
     );
-    // console.log("product for colors", product);
+  
     res.send({
       status: "success",
       product,
@@ -165,8 +165,7 @@ const addColors = async (req, res) => {
       throw new Error("the color is already existed");
     }
 
-    // console.log(colorsArray);
-    // console.log("exist", colorExist);
+  
     const { colorImage } = req.body;
     const { coverImage } = req.body;
     const { image1 } = req.body;
@@ -277,7 +276,7 @@ const addColors = async (req, res) => {
       image4: newImage4,
       image5: newImage5,
     });
-    // console.log(newImageModel);
+  
 
     const newColor = {
       color: req.body.color,

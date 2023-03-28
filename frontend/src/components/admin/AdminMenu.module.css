@@ -19,7 +19,7 @@
 
 .btn__main{
     padding: .2rem 1rem;
-    min-width: 95%;
+    min-width: 100%;
     background-color: var(--bg-3);
     color: white;
     border: none;
@@ -39,7 +39,7 @@
 }
 
 
-.product__menu{
+.sub__menu{
     width: 100%;
    font-size: 3rem;
    margin-top: 2rem;

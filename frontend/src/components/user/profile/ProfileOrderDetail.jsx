@@ -1,9 +1,10 @@
 import React,{useEffect,useState} from 'react';
 import {useParams} from 'react-router-dom';
 import {useSelector,useDispatch} from 'react-redux'
-import {findOrderDetail,getOrder,orderError,profileStatus} from '../../../reduxStore/user/profileSlice'
-import classes from './Detail.module.css'
-
+import {findOrderDetail,getOrder,orderError,profileStatus} from '../../../reduxStore/user/profileSlice';
+import {orderReturn} from '../../../reduxStore/user/orderReturnSlice';
+import classes from './Detail.module.css';
+import Loader from '../../../utils/Loader';
 
 function ProfileOrderDetail() {
 
@@ -25,36 +26,48 @@ function ProfileOrderDetail() {
     useEffect(()=>{
      
         if(!order) return
-        if(order.delivery_status === 'delivered'){
-          if(order.delivery_date){
-            // console.log('delvery date', Date.parse(order.delivery_date) )
-            // console.log('date now', Date.now())
-            const deliveyDate = Date.parse(order.delivery_date);
-            const dateNow = Date.now();
+        setRefundable(true)
+        // if(order.delivery_status === 'delivered'){
+        //   if(order.delivery_date){
+        //     // console.log('delvery date', Date.parse(order.delivery_date) )
+        //     // console.log('date now', Date.now())
+        //     const deliveyDate = Date.parse(order.delivery_date);
+        //     const dateNow = Date.now();
 
-            // console.log('daddd', new Date(dateNow - 604800000 ));
-            // console.log('delivery ', new Date(deliveyDate))
+        //     // console.log('daddd', new Date(dateNow - 604800000 ));
+        //     // console.log('delivery ', new Date(deliveyDate))
 
-            if(dateNow - 604800000 < deliveyDate ){
-                // console.log('returnable')
-                setRefundable(true)
-            }
+        //     if(dateNow - 604800000 < deliveyDate ){
+        //         // console.log('returnable')
+        //         setRefundable(true)
+        //     }
 
-          } 
-        }
+        //   } 
+        // }
        
 
     },[order])
 
 
-const onRetunHandler = (order)=>{
-    // console.log('order', order)
+const onRetunHandler = (or)=>{
+    console.log('or', or.sku);
+    console.log('orderere',order._id);
+
+    const returnDetail = {
+      id:order._id,
+      sku:or.sku
+    }
+
+    dispatch(orderReturn(returnDetail))
+
 }
+
+console.log('orderere',order);
 
 
   return (
     <div className={classes.wrapper}>
-     
+    {apiStats ==='loading' && <Loader/>} 
     {
      order &&
      <div>

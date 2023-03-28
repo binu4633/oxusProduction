@@ -7,6 +7,7 @@ function AdminMenu() {
   const navigate = useNavigate();
   const size = useWindowSize();
   const [productDisplay, setProductDisplay] = useState(false);
+  const [orderDisplay, setOrderDisplay] = useState(false);
   const [mobileMenuOn, setMobileMenuOn] = useState("inactive");
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
@@ -37,12 +38,19 @@ function AdminMenu() {
     navigate("/auth/admin/product/addProductbase");
   };
 
-  const orderDisplay = () => {
-    navigate("/auth/admin/orders");
+  const onOrderDisplay = () => {
+    setOrderDisplay(!orderDisplay)
   };
   const userDisplay = () => {
     navigate("/auth/admin/users");
   };
+
+ const onOrders = ()=>{
+  navigate("/auth/admin/orders");
+ }
+ const onReturns = ()=>{
+  navigate("/auth/admin/orderReturn");
+ }
 
   const mobileMenuHandler = () => {
     // setMobileMenuOn(!mobileMenuOn);
@@ -92,7 +100,7 @@ function AdminMenu() {
         </div>
 
         {productDisplay && (
-          <div className={classes.product__menu}>
+          <div className={classes.sub__menu}>
             <div>
               
 
@@ -125,10 +133,25 @@ function AdminMenu() {
         )}
 
         <div className={classes.link_wrapper}>
-          <button className={classes.btn__main} onClick={orderDisplay}>
+          <button className={classes.btn__main} onClick={onOrderDisplay}>
             order
           </button>
         </div>
+        {orderDisplay &&
+            <div className={classes.sub__menu}>
+            <div>
+              <button className={classes.btn__sub} onClick={onOrders}>
+                Orders
+              </button>
+            </div>
+            <div>
+              <button className={classes.btn__sub} onClick={onReturns}>
+                Return orders
+              </button>
+            </div>
+        </div>
+        }
+      
         <div className={classes.link_wrapper}>
           <button className={classes.btn__main} onClick={userDisplay}>
             user

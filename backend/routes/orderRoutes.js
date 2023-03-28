@@ -1,10 +1,13 @@
 import express from 'express';
 import {checkPin,findShippingCharge,takeGuestOrder,takeMemberOrder,webHooks,getOrderDetail,createPromoCode,createCoupon,orderTest} from '../controller/orderController.js'
 // import {protect} from '../middleware/authMiddleware.js';
+import {orderReturn} from '../controller/returnOrder.js'
 import {protect} from '../middleWare/authMiddleWare.js';
 
 
 const router = express.Router();
+
+router.post('/return',orderReturn)
 
 router.post('/checkPin',checkPin);
 
